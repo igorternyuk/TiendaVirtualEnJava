@@ -11,8 +11,8 @@
 
 	<properties>
 		<javaee.version>8.0.1</javaee.version>
-		<spring.version>4.3.6.RELEASE</spring.version>
-		<spring.security.version>4.2.2.RELEASE</spring.security.version>
+		<spring.version>5.1.6.RELEASE</spring.version>
+		<spring.security.version>5.1.5.RELEASE</spring.security.version>
 	</properties>
 	<dependencies>
 		<!-- Java EE API -->
@@ -52,7 +52,7 @@
 	    <dependency>
 	        <groupId>org.springframework.webflow</groupId>
 	        <artifactId>spring-webflow</artifactId>
-	        <version>2.4.4.RELEASE</version>
+	        <version>2.5.1.RELEASE</version>
 	    </dependency>
 	    
 	    <!-- Spring Security -->
