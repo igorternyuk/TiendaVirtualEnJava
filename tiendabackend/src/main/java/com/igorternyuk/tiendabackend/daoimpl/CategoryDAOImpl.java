@@ -3,9 +3,12 @@ package com.igorternyuk.tiendabackend.daoimpl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.igorternyuk.tiendabackend.dao.CategoryDAO;
 import com.igorternyuk.tiendabackend.dto.Category;
 
+@Repository("categoryDAO")
 public class CategoryDAOImpl implements CategoryDAO {
 
 	static List<Category> categories = new ArrayList<>();
@@ -26,6 +29,17 @@ public class CategoryDAOImpl implements CategoryDAO {
 	public List<Category> getAll() {
 		// TODO Auto-generated method stub
 		return categories;
+	}
+
+	@Override
+	public Category get(int id) {
+		
+		for(Category category: categories) {
+			if(category.getId() == id) {
+				return category;
+			}
+		}
+		return null;
 	}
 
 }
